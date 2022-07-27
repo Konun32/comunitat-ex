@@ -1,0 +1,82 @@
+@import "style/_nullstyle.scss";
+
+//--------------------------------------------------------header------------------------------------------------------
+
+.header {
+	height: 88px;
+	background: rgba(218, 239, 248, 0.5);
+	backdrop-filter: blur(10px);
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.logo {
+	&__img {
+		display: block;
+		height: 58px;
+		width: 80px;
+		background: #5E4E4E;
+		border-radius: 7px;
+		&:not(:last-child) {
+			margin: 0 20px 0 0;
+		}
+	}
+}
+.menu {
+	&__body {
+		display: flex;
+		align-items: center;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+}
+.social-network {
+	display: flex;
+	align-items: center;
+}
+
+//----------------------------------------------------main-block-----------------------------------------------------
+
+.slick {
+	&-list {
+		overflow: hidden;
+		padding: 0 0 !important;
+	}
+	&-track {
+		display: flex;
+	}
+	&-slide {
+		overflow: hidden;
+	}
+	&-active {
+	}
+}
+.main-block {
+	&__wrap {
+		min-height: 726px;
+		position: relative;
+	}
+	&__slider-wrap {
+		width: 1195px;
+		margin: -13px 0 0 440px;
+		position: absolute;
+	}
+	&__slid {
+		position: relative;
+		width: 1195px;
+		height: 726px;
+		border-radius: 10px;
+		& img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+}
